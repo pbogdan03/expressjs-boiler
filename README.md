@@ -3,6 +3,7 @@
 ### Structure
 
 Front end: __./public/__ contains all the editable files and the page is served from __./dist/__
+
 Back end: editable files are located in __root__ (server.js, routes.js, etc)
 
 ### Setup
