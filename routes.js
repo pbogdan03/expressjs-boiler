@@ -11,7 +11,7 @@ require('colors');
  */
 
 router.get('/', (req, res, next) => {
-	res.sendfile(__dirname + '/dist/index.html');
+	res.sendfile(__dirname + '/build/index.html');
 });
 
 module.exports = router;

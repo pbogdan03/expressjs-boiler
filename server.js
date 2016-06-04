@@ -15,10 +15,7 @@ let routes = require('./routes');
 let env = process.env.NODE_ENV || 'development';
 let app = express();
 
-if (env === 'development') {
-	app.use(require('connect-livereload')());
-}
-app.use(express.static(path.join(__dirname, './dist')));
+app.use(express.static(path.join(__dirname, './build')));
 app.use(routes);
 
 module.exports = app;
